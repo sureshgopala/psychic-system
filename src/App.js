@@ -1,5 +1,6 @@
 import './App.css';
 import Sidebar from "./components/Sidebar";
+import AxiosCallComponent from './components/Openaicall';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AboutUs, OurAim, OurVision } from "./pages/AboutUs";
 import {
@@ -11,6 +12,7 @@ import {
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
 import Support from "./pages/Support";
+
 
 
 function App() {
@@ -35,7 +37,7 @@ function App() {
         </Routes>
         </Router>
       <header className="App-header">
-       
+       <AxiosCallComponent />
         <p
           style={{
             color:'black',
@@ -43,7 +45,6 @@ function App() {
           
         </p>
         <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
           <a
@@ -58,11 +59,10 @@ function App() {
             }
           >
             Learn Brownie
-          </a>          
+          </a>     
         </p>
         <div>
         <p1 className="askBtn"> 
-        Ask anything!
         </p1>
         </div>
       </header>
