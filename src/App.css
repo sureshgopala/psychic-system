@@ -59,11 +59,17 @@
   .code-space{
     height: 500px;
     width: 800px;
+    margin-left: 300px;
   }
 
   .mybtn{
     color: black;
     align-self: flex-end;
+  }
 
-
+  .prompt{
+    margin-left: 20px;
+    margin-top: 5px;
+    max-height: 200px; 
+    width: 800px;
   }

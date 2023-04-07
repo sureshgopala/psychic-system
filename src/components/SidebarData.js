@@ -46,7 +46,7 @@ export const SidebarData = [
         cName: "sub-nav",
       },
       {
-        title: "Deploy and Testing",
+        title: "Deploy and Test",
         path: "/services/services3",
         icon: <IoIcons.IoIosPaper />,
       },

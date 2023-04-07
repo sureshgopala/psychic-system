@@ -7,6 +7,7 @@ return (
 		style={{
 			paddingTop: "10px",
 			fontStyle:"Italic",
+			fontSize:"15px"
 			
 		}}>
 		This is an internal StateStreet application to work with smart contracts 

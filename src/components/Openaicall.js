@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { OpenAIApi } from "openai";
+
+
 
 function AxiosCallComponent() {
     const [prompt, setPrompt] = useState("");
@@ -33,8 +34,12 @@ function AxiosCallComponent() {
               Authorization: `Bearer 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`,
             },
           }
-        );*/
-
+        );
+        const fs = require('fs');
+        fs.writeFile('./response.txt', response.data.choices[0].text, err => {
+          if (err) throw err;
+          console.log('Response saved to file');
+        });*/
         setResponseText(response.data.choices[0].text);
       // setResponseText(JSON.stringify(response.data, null, 2));
       } catch (error) {
@@ -44,11 +49,11 @@ function AxiosCallComponent() {
   
     return (
         <div style={{ display: "flex", flexDirection: "column" }}>
-        <label style={{ clear: "left",display: "flex", flexDirection: "row", width :"80px", paddingBottom: "20px", paddingRight: "10px", fontSize: "20px" }}>
+        <label style={{marginLeft: "300px", marginBottom:"10px", clear: "left",display: "flex", flexDirection: "row", width :"80px", paddingBottom: "20px", paddingRight: "10px", fontSize: "20px" }}>
           Prompt:
-        <input style={{float: "left" }} value={prompt} onChange={(e) => setPrompt(e.target.value)} />
+        <input className="prompt" value={prompt} onChange={(e) => setPrompt(e.target.value)} />
         </label>
-        <button onClick={makeOpenAIAPIRequest} style={{ alignSelf: "flex-end" }}>Generate Code</button>
+        <button onClick={makeOpenAIAPIRequest} style={{marginLeft: "400px", alignItems: "center", marginBottom: "10px", width:"100px", alignSelf:"center"}}>Generate Code</button>
         <textarea className="code-space" value={responseText} onChange={(e) => setResponseText(e.target.value)} style={{ marginBottom: "1rem" }} />
       </div>
     );
