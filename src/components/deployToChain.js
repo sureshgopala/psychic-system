@@ -31,9 +31,7 @@ const DeployToChain = () => {
   const handleClear = () => {
     setSavedFile(null);
   };
-  if (loading) {
-    return <div className="loader"></div>;
-  };
+
 
   return (
     <div style={{ display: "flex", flexDirection: "column", width:"400px", marginLeft:"300px" }}>
@@ -73,7 +71,7 @@ const DeployToChain = () => {
       <option value="option2">6000000 wei</option>
     </select>
       </label>
-      <button  style={{ marginLeft: "200px", width: "100px", marginTop:"5px"}} onClick={handleSave} >Deploy</button>
+      <button  style={{ marginLeft: "200px", width: "100px", marginTop:"5px"}}>Deploy</button>
       <textarea placeholder="Transaction Details" style={{ marginLeft: "1rem" , marginTop:"10px", height:"200px", width:"500px"}}/>
     </div>
   );
