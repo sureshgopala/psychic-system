@@ -6,6 +6,7 @@ import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
+import { RiFontSize } from "react-icons/ri";
  
 const Nav = styled.div`
   background: #15171c;
@@ -17,7 +18,7 @@ const Nav = styled.div`
  
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -55,8 +56,9 @@ const Sidebar = () => {
           </NavIcon>
           <h1
             style={{ textAlign: "center",
-                     marginLeft: "200px",
-                     color: "green" }}
+                     marginLeft: "500px",
+                     color: "orange",
+                    fontSize:"25px"}}
           >
             Smart Contracts With OpenAI
           </h1>

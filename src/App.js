@@ -15,9 +15,10 @@ import Support from "./pages/Support";
 
 
 
+
 function App() {
   return (
-  
+   
     <div className="App">
        <Router>
         <Sidebar />
@@ -42,10 +43,11 @@ function App() {
             color:'black',
             backgroundColor: 'black',
           }}>
-          
+        
         </p>
         <p className="small">
         </p>
+
         <p>
           <a
             className="App-link"
@@ -54,8 +56,8 @@ function App() {
             rel="noopener noreferrer"
             style={{
               display:'flex',
-              position:'absolute',
-              bottom:'0',
+              position:'relative',
+              bottom:'-20',
               left:'45%',
               fontSize: '14px',
               color: 'purple',
@@ -65,7 +67,8 @@ function App() {
             }
           >
             Learn Brownie
-          </a>     
+          </a>   
+            
         </p>
         <div>
         <p1 className="askBtn"> 

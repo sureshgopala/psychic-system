@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import AxiosCallComponent from '../components/Openaicall';
 import FileSaver from "../components/FileSaver";
-
+import DeployToChain from "../components/deployToChain";
+import MySpinner from "../components/MySpinner";
 export const Services = () => {
 return (
 	<div className="services">
@@ -31,7 +32,9 @@ return (
 export const ServicesThree = () => {
 return (
 	<div className="services">
-	<h1>Deploy to Blockchain and Test</h1>
+	<h1 style={{marginBottom:"20px"}}>Deploy to Blockchain and Test</h1>
+	<DeployToChain />
+	<MySpinner />
 	</div>
 );
 };
