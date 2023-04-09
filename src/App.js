@@ -11,7 +11,7 @@ import {
 import { Events, EventsOne, EventsTwo } from "./pages/Events";
 import Contact from "./pages/ContactUs";
 import Support from "./pages/Support";
-import AxiosCallComponent from './components/Openaicall';
+
 
 
 
@@ -40,6 +40,7 @@ function App() {
         <p
           style={{
             color:'black',
+            backgroundColor: 'black',
           }}>
           
         </p>
@@ -52,7 +53,13 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
             style={{
+              display:'flex',
+              position:'absolute',
+              bottom:'0',
+              left:'45%',
               fontSize: '14px',
+              color: 'purple',
+              transform: 'translateX(50%)',
             }
               
             }

@@ -52,35 +52,4 @@ export const SidebarData = [
       },
     ],
   },
-  {
-    title: "Performance",
-    path: "/events",
-    icon: <FaIcons.FaEnvelopeOpenText />,
- 
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
- 
-    subNav: [
-      {
-        title: "Send Transactions",
-        path: "/events/events1",
-        icon: <IoIcons.IoIosPaper />,
-      },
-      {
-        title: "Get Transactions",
-        path: "/events/events2",
-        icon: <IoIcons.IoIosPaper />,
-      },
-    ],
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-    icon: <FaIcons.FaPhone />,
-  },
-  {
-    title: "Support",
-    path: "/support",
-    icon: <IoIcons.IoMdHelpCircle />,
-  },
 ];

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AxiosCallComponent from '../components/Openaicall';
+import FileSaver from "../components/FileSaver";
 
 export const Services = () => {
 return (
@@ -11,7 +12,7 @@ return (
 
 export const ServicesOne = () => {
 	return (
-		<div className="services">
+		<div style={{backgroundColor: "white"}} className="services">
 			<h1>Ask Open AI</h1>
 			<AxiosCallComponent />
 		</div>
@@ -21,7 +22,8 @@ export const ServicesOne = () => {
 export const ServicesTwo = () => {
 return (
 	<div className="services">
-	<h1>StateStreet Service2</h1>
+	<h1 style={{marginBottom: "50px"}}>Storing Files and Generating Test Cases </h1>
+	<FileSaver />
 	</div>
 );
 };
@@ -29,7 +31,7 @@ return (
 export const ServicesThree = () => {
 return (
 	<div className="services">
-	<h1>StateStreet Service3</h1>
+	<h1>Deploy to Blockchain and Test</h1>
 	</div>
 );
 };

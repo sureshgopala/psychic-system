@@ -1,4 +1,6 @@
 import React from "react";
+import { FaBlackberry } from "react-icons/fa";
+import { RiFontColor } from "react-icons/ri";
 
 export const AboutUs = () => {
 return (
