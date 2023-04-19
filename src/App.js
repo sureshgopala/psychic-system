@@ -71,8 +71,6 @@ function App() {
             
         </p>
         <div>
-        <p1 className="askBtn"> 
-        </p1>
         </div>
       </header>
     </div>

@@ -28,7 +28,7 @@ const NavIcon = styled(Link)`
 const SidebarNav = styled.nav`
   background: #15171c;
   width: 250px;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -57,10 +57,10 @@ const Sidebar = () => {
           <h1
             style={{ textAlign: "center",
                      marginLeft: "500px",
-                     color: "orange",
+                     color: "white",
                     fontSize:"25px"}}
           >
-            Smart Contracts With OpenAI
+            Blockchain With OpenAI
           </h1>
         </Nav>
         <SidebarNav sidebar={sidebar}>

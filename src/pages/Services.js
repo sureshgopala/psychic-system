@@ -15,7 +15,6 @@ return (
 export const ServicesOne = () => {
 	return (
 		<div style={{backgroundColor: "white"}} className="services">
-			<h1>Ask Open AI</h1>
 			<AxiosCallComponent />
 		</div>
 	);
@@ -24,7 +23,6 @@ export const ServicesOne = () => {
 export const ServicesTwo = () => {
 return (
 	<div className="services">
-	<h1 style={{marginBottom: "50px"}}>Storing Files and Generating Test Cases </h1>
 	<FileSaver />
 	</div>
 );

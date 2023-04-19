@@ -15,7 +15,7 @@ font-size: 18px;
 
 &:hover {
 	background: #252831;
-	border-left: 4px solid orange;
+	border-left: 4px solid lightblue;
 	cursor: pointer;
 }
 `;
@@ -35,7 +35,7 @@ color: #f5f5f5;
 font-size: 18px;
 
 &:hover {
-	background: orange;
+	background: lightblue;
 	cursor: pointer;
 }
 `;

@@ -1,4 +1,6 @@
 import React from "react";
+import NetworkTests from "../components/NetworkTests";
+import Example from "../components/Clicker";
 
 export const Events = () => {
 return (
@@ -11,7 +13,7 @@ return (
 export const EventsOne = () => {
 return (
 	<div className="events">
-	<h1>Digital Event1</h1>
+	<NetworkTests />
 	</div>
 );
 };
@@ -20,6 +22,7 @@ export const EventsTwo = () => {
 return (
 	<div className="events">
 	<h1>Digital Event2</h1>
+	<Example />
 	</div>
 );
 };

@@ -46,9 +46,31 @@ export const SidebarData = [
         cName: "sub-nav",
       },
       {
-        title: "Deploy and Test",
+        title: "Deployment",
         path: "/services/services3",
         icon: <IoIcons.IoIosPaper />,
+      },
+    ],
+  },
+  {
+    title: "Validations",
+    path: "/events",
+    icon: <IoIcons.IoIosPaper />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+ 
+    subNav: [
+      {
+        title: "Network Testing",
+        path: "/events/events1",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
+      },
+      {
+        title: "Performance Testing",
+        path: "/events/events2",
+        icon: <IoIcons.IoIosPaper />,
+        cName: "sub-nav",
       },
     ],
   },
