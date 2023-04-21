@@ -32,7 +32,7 @@ function AxiosCallComponent() {
         try {
         const { Configuration, OpenAIApi } = require("openai");
         const configuration = new Configuration({
-        apiKey: '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',
+        apiKey: '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',
         });
         const openai = new OpenAIApi(configuration);
         const response =  await openai.createCompletion({
@@ -62,7 +62,7 @@ function AxiosCallComponent() {
           try {
             const { Configuration, OpenAIApi } = require("openai");
             const configuration = new Configuration({
-            apiKey: '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',
+            apiKey: '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',
             });
             const openai = new OpenAIApi(configuration);
             const response = await openai.createCompletion({

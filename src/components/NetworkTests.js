@@ -10,7 +10,7 @@ const NetworkTests = () => {
   const [selectedValue, setSelectedValue] = useState('option1');
 
   const handleSelectChange = (event) => {
-    setSelectedValue(event.target.value);
+    setSelectedValue(event.target.value);  
   };
   const handleContentChange = (event) => {
     setContent(event.target.value);
@@ -34,6 +34,11 @@ const NetworkTests = () => {
       let accs = await web3.eth.getAccounts();
       let vals = Object.values(accs);
       setSavedFile(vals);
+      } else if(selectedValue == 'option7'){
+        var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
+        let trans = await web3.eth.getTransaction('0xb99cca8952bfceecd0db69f0397852cd81cac80d20d96e8a50921c27c816cbe8');
+        let vals = Object.values(trans);
+        setSavedFile(vals);
       }
   };
 
@@ -56,18 +61,17 @@ const NetworkTests = () => {
       <option value="option4">getRpcModules</option>
       <option value="option5">getNodeAllowedList</option>
       <option value="option6">getAccounts</option>
-      
-
+      <option value="option7">getTransaction</option>
     </select>
-
-    <label style={{color: "black", marginLeft: "3px", marginBottom:"10px",position:"relative", width :"200px", fontSize: "15px", top:"30px"}} >
+    <input placeholder="tx_hash" class="form-control" style={{ marginLeft: "3px", marginBottom:"10px",position:"relative", width :"200px", left:"500px",fontSize: "15px", top:"-15px"}} ></input>
+    <label style={{color: "black", marginLeft: "3px", marginBottom:"10px",position:"relative", width :"200px", fontSize: "15px",top:"30px"}} >
           Connect to Chain:  </label>
       <select class="form-control" style={{height:"-8px",position:"relative", left:"150px",top:"-10px", width:"120px",marginLeft:"180px"}}>
       <option value="">-- Select an option --</option>
       <option value="option1">ganache</option>
       <option value="option2">Goerli</option>
-      <option value="option3">pleiades_dev</option>
-      <option value="option3">pleiades_sandbox</option>
+      <option value="option3">pleiades_dev - https://dev-pleiades.com</option>
+      <option value="option3">pleiades_sandbox  https://sandbox-pleiades.com</option>
     </select>
 
       <textarea  className="form-control" placeholder="Test Output" value={savedFile} style={{position:"relative",top:"100px", marginLeft: "1rem" , left:"300px",marginTop:"10px", height:"200px", width:"500px"}} />
