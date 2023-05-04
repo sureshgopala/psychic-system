@@ -2,7 +2,9 @@ import React from "react";
 import { FaBlackberry } from "react-icons/fa";
 import { RiFontColor } from "react-icons/ri";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import SomeActionComponent from "../components/SomeActionComponent";
+import TextArea from "../components/TextArea"
+import OtherComponent from "../components/OtherComponent";
 export const AboutUs = () => {
 return (
 	<div className="form-group">
@@ -37,7 +39,9 @@ return (
 export const OurVision = () => {
 return (
 	<div className="home">
-	<h1>StateStreet Vision</h1>
+	
+
+	
 	</div>
 );
 };
