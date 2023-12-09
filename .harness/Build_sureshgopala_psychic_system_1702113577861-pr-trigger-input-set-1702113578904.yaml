@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sureshgopala_psychic_system_1702113577861-pr-trigger-input-set
+  identifier: Build_sureshgopala_psychic_system_1702113577861prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_sureshgopala_psychic_system_1702113577861
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
