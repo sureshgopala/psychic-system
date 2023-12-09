@@ -1,0 +1,40 @@
+pipeline:
+  identifier: Build_sureshgopala_psychic_system_1702113577861
+  name: Build psychic-system
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: sureshgopala/psychic-system
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: npminstall
+                  name: npm_install
+                  spec:
+                    command: npm install
+                  timeout: ""
+                  type: Run
+              - step:
+                  identifier: npmtest
+                  name: npm_test
+                  spec:
+                    command: npm run test
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
